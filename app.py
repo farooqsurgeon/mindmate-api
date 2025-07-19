@@ -1,4 +1,7 @@
 print("✅ app.py is running")
+from flask_cors import CORS
+app = Flask(__name__)
+CORS(app)
 
 from flask import Flask, request, jsonify
 import pickle
